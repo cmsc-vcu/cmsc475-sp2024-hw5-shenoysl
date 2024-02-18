@@ -1,6 +1,6 @@
 ---
 title: Homework 5 - Coding a navigation system
-author: default author
+author: Satya Shenoy
 date: last-modified
 format:
   html:
@@ -8,61 +8,107 @@ format:
     theme: cosmo
 ---
 
-* [LINK to GITHUB](https://github.com/cmsc-vcu/cmsc475-sp2024-hw5-template)
-* [LINK to FIGMA PROTOTYPE CODE](https://www.figma.com/file/aSqekRNJn6DM1VMivvoibQ/Storyboard-Creator---Public-Demo-(Community)?type=design&node-id=111%3A2028&mode=design&t=PGNCnlkYRkizaQuu-1)
+* [LINK to GITHUB](https://github.com/cmsc-vcu/cmsc475-sp2024-hw5-shenoysl)
+* [LINK to FIGMA PROTOTYPE CODE](https://www.figma.com/proto/7bDVoI0YU7Byz1FxZsyT1J/CMSC475-HW2?type=design&node-id=2-2&t=sAC4vUHQ5BDCsg7v-1&scaling=contain&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&mode=design)
 
-(this is the sample document.  You need to make it your own.)
+# Introduction
 
-(Your report should follow the outline below, found under the easter eggs.)
+- The 5 panels that are shown below are all connected by one thing, me! They are all a depiction of something that is important to me, that I believe in truly and has shaped me to the be the person I am today. 
+- The final panel is a crescendo of all the panels before it, as it has design elements brought in from all the other panels
+- Due to this, my main strategy in navigation is to not allow the user to move from the first panel to the last as they will not understand the true culmination. 
+- Further down this page you will find my p5js sketch which is my navigation scaffold of the 5 panels
+- I was able to implement my 3 navigation methods as well as two widgets, a counter that keeps track of key presses in the top left and a counter that keeps track of clicks in the top right
 
-# xIntroduction
+# Panels to Include
 
-- Explain the purpose of the navigation strategy.
-- Briefly describe the story told in five (or more) panels.
+## Panel 1 - contact information
 
-# xNavigation Goals
+![](assets/Shenoy-HW2-Frame1.png)
 
-- State what you want users to achieve by navigating through the panels.
-- Highlight the key points or emotions to convey.
+This is a contact card with my contact information and the overall design has an old-timey flair. 
 
-# xNavigation Elements
+## Panel 2 - Passion
 
-- Explain how users will move from one panel to another.
-- Mention if there are buttons, arrows, or gestures involved.
+My first theme is *passion*.  Below is my storyboard.
+This theme is *passion*.
 
-# xFigma mockup
+![](assets/Shenoy-HW2-Frame2.png)
 
-- Add the figma mockup in an iframe.
-- Explain how to use it in this section.
+I selected *passion* because I believe it is one of the most important emotions that we exhibit, it can be positive or negative but in my case I use passion as my driving force to move further in life and gain success and hapiness in whichever way I can. I would not still be in Computer Science now as a Senior if I wasn't passionate about this subject, my favorite athletes that I look up to would always mention how they can go through any ups and downs but still stay resilient and perservere because they have true passion for their sport and want to succeed no matter what. I envision passion as a fire burning inside us, as it is an incredibly intense emotion that we feel, it is a fire that lights the way towards success, and this is why I am using this fire as the design element for my storyboard. 
+
+## Panel 3 - Curiosity
+
+This theme is *curiosity*.
+
+![](assets/Shenoy-HW2-Frame3.png)
+
+I selected *curiosity* because I feel it is my driving force to problem solve, come up with new ideas, understand what is happening around me. I have always been curious when it comes to any aspect of my life, schoolwise I would always be asking questions to the teachers as I felt being curious and proposing questions was the best and most effective method in how I can learn a topic or subject. My curiosity also lends me to be a very good problem solver as I ask myself many questions on how I can tackle certain problems and build off that. This storyboard depicts curiosity for me because I am always having questions to ask internally to myself or externally to someone else so that's why there are various question marks going around the person's head. Additionally, I wanted to show how it feels like a lightbulb flicking on when I eventually am able to resolve the situation after prying or digging deeper, so that is why the person's head is basically just a lightbulb. 
+
+
+## Panel 4 - Sustainability
+
+This theme is *sustainability*.
+
+![](assets/Shenoy-HW2-Frame4.png)
+
+I selected *sustainability* because ever since childhood, I have always loved the outdoors, going out on serene trips to Shenandoah, going on hiking trails, and just spending time with my family and friends outdoors has been something I have always cherished. Sustainability to me, means taking care of our wildlife and our environment as much as we can, never taking them for granted, and realizing the true beauty of the outdoors. My storyboard depicts a simple nature landscape, it is actually pretty similar to a pond I would visit a lot with my family, anytime we drove by, I would make sure to to take in it's beauty. 
+
+## Panel 5 - Closing panel
+
+This is my concluding frame.
+
+![](assets/Shenoy-HW2-Frame5.png)
+
+I went with this design as my *closing panel* because I felt like it was a really nice cohesive way of tying all of the other themes and design elements from my middle panels into one. The environment and nature landscape depicts my love of nature and the outdoors and the theme of sustainiabilty, the question marks above the person's head depicts curiosity as I would be wondering where I can go next, where I can explore next when day comes. Another element I added was the campfire which connects with my theme of passion, the fire burns inside me to continue to explore and I use it as something to push me forward. 
+
+# Navigation Goals
+
+- When navigating through the panels, I want the users to have a very ease of access the ways to navigate around should make sense to any ordinary person
+- Another goal was to have multiple options of navigation, I kept in mind the various ways someone would think of moving from one panel to another
+- A key point I wanted to ensure is that I did not want the user to be able to skip from the first panel straight to the last panel because I want them to understand the design elements in the final panel
+- The final panel serves as a culmination of everything, so I want them to atleast look at another panel before going to the final panel as it would be confusing as to why that is my closing panel
+- With that being said, they can go from the last panel back to the first, as that made more sense so they can rerun through the panels
+
+# Navigation Elements
+
+- As I mentioned in the previous section, I wanted users to have various options to navigate
+- The first option is by simply clicking on the panels, a simple click will allow the user to move to the next panel all the way back to the beginning and so forth
+- Another option is by using the left and right arrow keys, hitting the right arrow key will allow you to go the next panel, the left arrow key will send you back to the previous panel
+- One exception to this arrow key option is that the left arrow key on the first panel will not do anything, as I made sure not to allow the user to go from the first panel straight to the last panel
+- The third and final option of navigation is by using the number keys on the keyboard, the number keys 1-5 will redirect you to the corresponding panel, 1 being the first panel, 2 the second etc.
+- Lastly, if you are on the first panel, hitting the number 5 key will not do anything to reinstate the disallowment of going freely to the final panel from the first.
+
+# Figma mockup
+
+- Here is the mockup as you can see the frames are in the center, to navigate you may click on the panels to go to the next panel, use the number keys, or use the left and right arrow keys
+- I have explained each navigation element in the previous section and you may use all 3 of them on this figma prototype. 
 
 ```{=html}
 <center>
-<iframe
-src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQJss2lSSmmUMKkKodCWxN2%2FHomework-4---Prototype%3Ftype%3Ddesign%26t%3DnIV2fhIRzGgxc44k-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26node-id%3D3-2%26starting-point-node-id%3D3%253A2%26mode%3Ddesign"
-style="border: 1px solid rgba(0, 0, 0, 0.1);"
-width="800" height="450"  
-data-external="1"
-allowfullscreen
-></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7bDVoI0YU7Byz1FxZsyT1J%2FCMSC475-HW2%3Ftype%3Ddesign%26node-id%3D2-2%26t%3DsAC4vUHQ5BDCsg7v-1%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D2%253A2%26mode%3Ddesign" allowfullscreen data-external="1"></iframe>
 </center>
 ```
 
-# xUser Testing
+# User Testing
 
-- Share your design with someone else.
-- Explain your user testing procedure.  What did you ask?  What did they say?
-- Consider their feedback and make adjustments as needed.
+- I shared my prototype with my sister who is not as technologically inclined as me.
+- I wanted her to test it out because I wanted to ensure the navigation was easy and understandable for any ordinary person who may not thoroughly understand technology and using computers.
+- She told me she really liked my choices for the navigation elements and that they all made sense, going from a very simple element like clicking to something more intriguing like the number keys.
+- Overall, she found navigating through the prototype to be simple and enjoyable.
 
-# xImplementation
+# Implementation
 
-Drop the appropriate link in the SRC field below.  
-
-BE SURE to change the ./sketches/. to ./full/. so your script shows full screen and not in the editor.
+- Here is my p5js implementatoin of my navigation between panels, it is simply a scaffold for now but please interact with it 
+- You may use the number keys to go to the corresponding panels, left and right arrow keys to go back and forth, or just simply click on the panels and they will move to the next panel
+- Notice that hitting the left arrow key when you are on the 1st panel will not do anything and hitting the 5 number key when you are on the 1st panel will also not do anything
+- I added that because of my main goal of not allowing the user to skip straight from the beginning panel to the last panel
+- The number in the top right is a click counter, it keeps track of how many times you clicked on the panel
+- The number in the top left is a key press counter, it keeps track of how many times you pressed one of the navigation keys
 
 ```{=html}
 <center>
 <iframe
-src="https://editor.p5js.org/jleonard99/full/5ujbqRESJ"
+src="https://editor.p5js.org/shenoysl/full/2c0dEi4ps"
 style="border: 1px solid rgba(0, 0, 0, 0.1);"
 width="800"
 height="450"  
@@ -75,15 +121,6 @@ allow="geolocation *; microphone *; camera *; midi *; encrypted-media *; autopla
 </center>
 ```
 
-# xReflection
+# Reflection
 
-* This is the most important section of the assignment!
-* Stop, Pause, Breath, and Consider.
-
-1. How much time did you spend on the assignment?
-1. What activities consumed the most of your time? 
-1. How could you have been better prepared to tackle this assignment (in terms of skills or knowledge)?
-1. What did you find most satisfying about this assignment?
-1. What did you find most difficult about this assignment? 
-1. Given more time, what would you do differently?
-
+I spent just about 10 hours on this assignment, I was planning on working more on it but I was extremely busy this week with my part-time job and the career fiar. The activities that consumed most of my time during the week was preparing for the career fair and also helping set up everything and volunteering to help out my company that was at the fair, along with that I was busy working on my senior design project and my company had given me a task to complete during the week for my part-time job as well, so I was busy with a multitude of things. I think I could have been better prepared if I took more time in watching videos and doing lots of practice with p5js before jumping into the assignment because there were a lot of times that I felt stuck and lost while I was working on it. I also have never worked with any javascript framework before this semester so if I had more experience with this language in general I would have definitely been much more prepared. The most satisfying part of the assignment was when I figured out how to do implement the keystrokes and have the panels actually change when I pressed the certain keys because that was my main navigation method, the different types of keys you can choose to get from one panel to another. The most difficult part was just getting started really, I was pretty lost on how to get started and was staring at the editor for a while not knowing what to do, but I watched the professor's lecture and began understanding how to go about it and even used some of his code to get me started which he mentioned was fine to do. Another struggle was getting the click and key counters to correctly be displayed and increment but I figured out that I needed to use the p5js inbuilt functions which track both key presses and clicks. If I was given more time I would definitely have tried to add some sort of animation when the panels would go from one to another but I just was not able to fully understand how to do it and it seemed a bit too complicated so I want to take more time in just understanding exactly how to do it before just copying code from online and adding animations that way. 
